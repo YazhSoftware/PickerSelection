@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectionViewController" customModule="PickerSelection" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="TDj-ZO-wHY" id="lSG-5V-EcZ"/>
+                <outlet property="searchHeightConstraint" destination="ebr-yq-33v" id="K8Z-UO-s9m"/>
+                <outlet property="tableViewSelection" destination="P4z-3H-mZ2" id="Hyf-NJ-dbL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="498"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P4z-3H-mZ2">
+                    <rect key="frame" x="0.0" y="44" width="340" height="454"/>
+                    <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XNL-gL-9K7"/>
+                        <outlet property="delegate" destination="-1" id="ay8-IO-eVb"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TDj-ZO-wHY">
+                    <rect key="frame" x="0.0" y="0.0" width="340" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="340" id="IQq-Wg-jVl"/>
+                        <constraint firstAttribute="height" constant="44" id="ebr-yq-33v"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.71764705880000002" green="0.69019607839999997" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="IQq-Wg-jVl"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="PW6-Qc-af5"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TDj-ZO-wHY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ILy-qR-ztj"/>
+                <constraint firstItem="TDj-ZO-wHY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J3F-Ok-L59"/>
+                <constraint firstAttribute="trailing" secondItem="TDj-ZO-wHY" secondAttribute="trailing" id="M9X-op-ThB"/>
+                <constraint firstAttribute="trailing" secondItem="P4z-3H-mZ2" secondAttribute="trailing" id="chB-d6-kGM"/>
+                <constraint firstItem="TDj-ZO-wHY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dNu-PG-jPj"/>
+                <constraint firstAttribute="bottom" secondItem="P4z-3H-mZ2" secondAttribute="bottom" id="fBM-5z-krB"/>
+                <constraint firstItem="P4z-3H-mZ2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ppB-OX-NDg"/>
+                <constraint firstItem="P4z-3H-mZ2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qSL-sw-l5f"/>
+                <constraint firstItem="P4z-3H-mZ2" firstAttribute="top" secondItem="TDj-ZO-wHY" secondAttribute="bottom" id="sMt-lm-glU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ppB-OX-NDg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="565" y="401"/>
+        </view>
+    </objects>
+</document>
